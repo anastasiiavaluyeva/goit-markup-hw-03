@@ -47,6 +47,9 @@ a {
     overflow: hidden;
 }
 
+img {
+    display: block;
+}
 
 /*--------HEADER---------*/
 
@@ -58,6 +61,28 @@ a {
     line-height: 1.17;
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    margin-right: 76px;
+}
+
+.header-container {
+    display: flex;
+    border-bottom: 1px solid #E7E9FC;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-navigation {
+    display: flex;
+}
+
+.header-menu-list {
+    display: flex;
+    gap: 40px;
+}
+
+.header-contact-list {
+    display: flex;
+    gap: 40px;
 }
 
 .header-logo-grey {
@@ -97,17 +122,20 @@ a {
 
 .contact-info {
     font-style: normal;
-}
-
-.header-container {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    margin-left: auto;
 }
 
 /*--------HERO---------*/
 
 .hero {
     background-color: #2E2F42;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
 
 .hero-title {
@@ -119,6 +147,7 @@ a {
     letter-spacing: 1.12px;
     padding-top: 188px;
     margin-bottom: 48px;
+    max-width: 496px;
 }
 
 .hero-button {
@@ -129,6 +158,10 @@ a {
     line-height: 1.5;
     letter-spacing: 0.64px;
     cursor: pointer;
+    min-width: 169px;
+    min-height: 56px;
+    border-radius: 4px;
+    border: none;
     margin-bottom: 188px;
 }
 
@@ -142,6 +175,15 @@ a {
 .services-section {
     padding-top: 120px;
     padding-bottom: 120px;
+}
+
+.services-section-list {
+    display: flex;
+    gap: 24px;
+}
+
+.services-section-item {
+    width: calc((100% - 3 * 24px) / 4);
 }
     
 .services-section-subtitle {
@@ -197,9 +239,17 @@ a {
     background-color: #F4F4FD;
 }
 
+.team-section-list {
+    display: flex;
+    gap: 24px;
+}
+
 .team-section-item {
     background-color: #FFF;
-    padding-bottom: 120px;
+    height: 380px;
+    margin-bottom: 120px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 
 .team-section-info {
@@ -209,6 +259,9 @@ a {
 /*--------OUR PORTFOLIO---------*/
 
 .portfolio-section-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
     padding-bottom: 120px;
 }
 
@@ -227,6 +280,10 @@ a {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.32px;
+}
+
+.portfolio-list-item {
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .portfolio-section-info {
@@ -261,4 +318,5 @@ a {
     line-height: 1.5;
     letter-spacing: 0.32px;
     margin-top: 16px;
+    max-width: 264px;
 }
