@@ -37,20 +37,6 @@ img {
     display: block;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
 /*--------HEADER---------*/
 
 .header-logo {
@@ -67,13 +53,13 @@ img {
 .header {
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 24px;
-    padding-bottom: 24px;
     border-bottom: 1px solid #E7E9FC;
 }
 
 .header-container {
     display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-navigation {
@@ -246,11 +232,6 @@ img {
     padding-bottom: 120px;
 }
 
-.team-container {
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-
 .team-section-list {
     display: flex;
     gap: 24px;
@@ -264,7 +245,7 @@ img {
 }
 
 .team-section-info {
-    padding: 32px 16px;
+    padding: 32px 0px;
 }
 
 /*--------OUR PORTFOLIO---------*/
