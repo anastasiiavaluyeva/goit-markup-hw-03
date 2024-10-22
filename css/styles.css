@@ -38,15 +38,13 @@ img {
 
 .visually-hidden {
     position: absolute;
-    width: 1px;
-    height: 1px;
+    width: 1px; 
+    height: 1px; 
     margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    border: 0; 
+    padding: 0; 
+    white-space: nowrap; clip-path: inset(100%);
+    clip: rect(0 0 0 0); overflow: hidden;
 }
 
 /*--------HEADER---------*/
@@ -64,7 +62,6 @@ img {
 
 .header {
     border-bottom: 1px solid #E7E9FC;
-    padding: 24px 0 24px 0;
 }
 
 .header-container {
@@ -96,6 +93,7 @@ img {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.32px;
+    padding: 24px 0 24px 0;
 }
 
 .header-menu-link:hover,
