@@ -33,20 +33,6 @@ a {
     margin: 0 auto;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
 img {
     display: block;
 }
@@ -66,13 +52,15 @@ img {
 
 .header-container {
     display: flex;
-    border-bottom: 1px solid #E7E9FC;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 24px;
     padding-bottom: 24px;
 }
 
 .header-navigation {
     display: flex;
+    align-items: center;
 }
 
 .header-menu-list {
@@ -136,6 +124,8 @@ img {
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .hero-title {
@@ -145,7 +135,6 @@ img {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 1.12px;
-    padding-top: 188px;
     margin-bottom: 48px;
     max-width: 496px;
 }
@@ -162,7 +151,6 @@ img {
     min-height: 56px;
     border-radius: 4px;
     border: none;
-    margin-bottom: 188px;
 }
 
 .hero-button:hover,
@@ -171,6 +159,20 @@ img {
 }
 
 /*--------Our Services---------*/
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 .services-section {
     padding-top: 120px;
@@ -212,8 +214,7 @@ img {
     font-weight: 700;
     line-height: 1.11; letter-spacing: 0.72px; 
     text-transform: capitalize;
-    padding-top: 120px;
-    padding-bottom: 72px;   
+    margin-bottom: 72px;   
 }
 
 .team-list-subtitle {
@@ -237,6 +238,13 @@ img {
 
 .team-section {
     background-color: #F4F4FD;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.team-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .team-section-list {
@@ -247,7 +255,6 @@ img {
 .team-section-item {
     background-color: #FFF;
     height: 380px;
-    margin-bottom: 120px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
 }
@@ -258,11 +265,16 @@ img {
 
 /*--------OUR PORTFOLIO---------*/
 
+.portfolio-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .portfolio-section-list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    padding-bottom: 120px;
+    row-gap: 48px;
 }
 
 .portfolio-list-subtitle {
@@ -280,10 +292,6 @@ img {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.32px;
-}
-
-.portfolio-list-item {
-    border-bottom: 1px solid #E7E9FC;
 }
 
 .portfolio-section-info {
@@ -305,6 +313,11 @@ img {
     font-weight: 700;
     line-height: 1.17;letter-spacing: 0.54px;
     text-transform: uppercase;
+    margin-bottom: 16px;
+    }
+
+    .footer-logo a {
+        display: inline-block;
     }
     
 .footer-logo-light {
@@ -317,6 +330,5 @@ img {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.32px;
-    margin-top: 16px;
     max-width: 264px;
 }
