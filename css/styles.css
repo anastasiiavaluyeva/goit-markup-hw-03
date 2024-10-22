@@ -28,9 +28,8 @@ a {
 
 .container {
     width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 img {
@@ -42,12 +41,12 @@ img {
     width: 1px;
     height: 1px;
     margin: -1px;
-    padding: 0;
     border: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    padding: 0;
     white-space: nowrap;
     clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /*--------HEADER---------*/
@@ -64,13 +63,12 @@ img {
 }
 
 .header {
-    padding: 0 15px 0 15px;
     border-bottom: 1px solid #E7E9FC;
+    padding: 24px 0 24px 0;
 }
 
 .header-container {
     display: flex;
-    padding: 24px 0 24px 0;
 }
 
 .header-navigation {
