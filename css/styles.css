@@ -37,6 +37,19 @@ img {
     display: block;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    white-space: nowrap;
+    clip-path: inset(100%);
+}
+
 /*--------HEADER---------*/
 
 .header-logo {
@@ -51,13 +64,13 @@ img {
 }
 
 .header {
-    padding: 0 15px;
+    padding: 0 15px 0 15px;
     border-bottom: 1px solid #E7E9FC;
 }
 
 .header-container {
     display: flex;
-    padding: 24px 0;
+    padding: 24px 0 24px 0;
 }
 
 .header-navigation {
@@ -191,20 +204,6 @@ img {
     font-weight: 400;
     line-height: 1.5; 
     letter-spacing: 0.32px;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
 }
 
 /*--------Our Team---------*/
