@@ -37,6 +37,20 @@ img {
     display: block;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /*--------HEADER---------*/
 
 .header-logo {
@@ -50,12 +64,16 @@ img {
     margin-right: 76px;
 }
 
-.header-container {
-    display: flex;
+.header {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.header-container {
+    display: flex;
 }
 
 .header-navigation {
@@ -117,6 +135,8 @@ img {
 
 .hero {
     background-color: #2E2F42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .hero-container {
@@ -124,8 +144,6 @@ img {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    padding-top: 188px;
-    padding-bottom: 188px;
 }
 
 .hero-title {
@@ -159,20 +177,6 @@ img {
 }
 
 /*--------Our Services---------*/
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
 
 .services-section {
     padding-top: 120px;
@@ -296,6 +300,7 @@ img {
 
 .portfolio-section-info {
     padding: 32px 16px;
+    border-bottom: 1px solid #E7E9FC;
 }
 
 /*--------FOOTER---------*/
@@ -307,6 +312,7 @@ img {
 }
 
 .footer-logo {
+    display: inline-block;
     color: #4D5AE5;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
